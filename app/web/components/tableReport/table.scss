@@ -1,0 +1,63 @@
+.table-wrap {
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #dfe2e6;
+  border-collapse: collapse;
+
+  thead {
+    font-weight: bold;
+    background-color: #f7f9fa;
+    tr {
+      height: 48px;
+      td {
+        padding: 5px;
+        border: 1px solid #dfe2e6;
+        box-sizing: border-box;
+        line-height: 1.4em;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      height: 48px;
+
+      td {
+        padding: 5px;
+        box-sizing: border-box;
+        border: 1px solid #dfe2e6;
+        line-height: 1.4em;
+      }
+    }
+
+    tr:nth-child(2n) {
+      background-color: #f7f9fa;
+    }
+  }
+}
+.pdf-table-wrap {
+  background-color: transparent;
+  thead {
+    background: transparent !important;
+    tr {
+      height: auto;
+      td {
+        border: 1px solid #000 !important;
+      }
+    }
+  }
+  tbody {
+    tr {
+      height: auto;
+      td {
+        padding: 5px;
+        border: 1px solid #000 !important;
+      }
+    }
+    tr:nth-child(2n) {
+      background-color: transparent !important;
+    }
+  }
+}

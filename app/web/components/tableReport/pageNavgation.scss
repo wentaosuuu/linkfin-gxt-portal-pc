@@ -1,0 +1,43 @@
+.pageNavgation-wrap {
+  display: flex;
+
+  ul {
+    display: flex;
+  }
+
+  .page {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #eee;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+    color: #666;
+    min-width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-next,
+  .btn-prev {
+    padding: 0 10px;
+    color: $theme-gray-color;
+
+    &.clickable {
+      color: #666;
+    }
+  }
+
+  .btn-next {
+    margin-right: 0;
+  }
+
+  .page.active {
+    // background-color: #EF4747;
+    border: 1px solid #2C97DE ;
+    color: #2C97DE;
+  }
+}

@@ -1,0 +1,108 @@
+.gxt-file-box{
+  display: flex;
+  .gxt-label{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 150px;
+    padding-right: 10px;
+    color: #666;
+    .required{
+      display: none;
+      color: #f56c6c;
+      margin-right: 5px;
+    }
+    .required.active{
+      display: block;
+    }
+  }
+  .gxt-file-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    .file-list{
+      display: flex;
+      flex-wrap: wrap;
+      .preview-item{
+        width: 100px;
+        height: 100px;
+        border: 1px solid #c0ccda;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin-right: 10px;
+        position: relative;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        .preview-box{
+          width: 100%;
+          height: 100%;
+          position: relative;
+          .gou-icon{
+            right: -30px;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-top: 30px solid #13ce66;
+            i{
+              left: -16px;
+              top: -28px;
+              position: absolute;
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              background: url('../../../assets/img/success.png') no-repeat 0 0;
+            }
+          }
+          .preview-file{
+            height: 100%;
+          }
+        }
+        .mask{
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 80px;
+          transition: all .3s;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(0,0,0,.3);
+          .delete-icon{
+            cursor: pointer;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url('../../../assets/img/delete.png') no-repeat 0 0;
+          }
+        }
+      }
+      .preview-item:hover{
+        .mask{
+          display: flex;
+        }
+      }
+    }
+    .file-input{
+      background-color: #fbfdff;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      border: 1px dashed #c0ccda;
+      border-radius: 10px;
+      background: url('../../../assets/img/add_icon.png') no-repeat center;
+      cursor: pointer;
+    }
+    .file-input:hover{
+      border: 1px dashed #f56c6c;
+    }
+  }
+  .gxt-file-wrap.error{
+    .file-input{
+      border: 1px dashed #f56c6c;
+    }
+  }
+}

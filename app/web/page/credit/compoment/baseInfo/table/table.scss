@@ -1,0 +1,65 @@
+.container {
+  padding: 20px;
+  background: #fff;
+  .title {
+    font-weight: bold;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 18px;
+    color: #333333;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .footer {
+    height: 50px;
+    font-family: MicrosoftYaHei;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0;
+    padding-top: 10px;
+  }
+  .table {
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    // border: 1px solid #dfe2e6;
+    border-collapse: collapse;
+    .bloder {
+      font-family: MicrosoftYaHei-Bold;
+      color: #333333;
+      font-weight: bold;
+    }
+    .tr {
+      .td {
+        box-sizing: border-box;
+        padding: 13px;
+        height: 48px;
+        border: 1px solid #dfe2e6;
+        &:nth-child(odd) {
+          background: #f7f9fa;
+        }
+      }
+    }
+  }
+}
+
+.pdf-container {
+  background-color: transparent;
+  .footer {
+    color: #333;
+  }
+  .table {
+    // border: 1px solid #333;
+    background: transparent;
+    .tr {
+      .td {
+        padding: 5px;
+        height: auto;
+        border: 1px solid #333;
+        &:nth-child(odd) {
+          background: transparent;
+        }
+      }
+    }
+  }
+}

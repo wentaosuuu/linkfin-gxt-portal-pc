@@ -1,0 +1,53 @@
+.statistics-list {
+  display: flex;
+  width: 1200px;
+  height: 190px;
+  background: #fff;
+  align-items: center;
+  li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.1s;
+    &:last-child {
+      div {
+        border-right: 0;
+      }
+    }
+    &:hover {
+      transform: scale(1.08, 1.1);
+      div {
+        border-right: 0;
+      }
+      .name{
+        color: #fff;
+      }
+    }
+    div {
+      border-right: 1px solid #dfe2e6;
+      width: 100%;
+      .value,
+      .name {
+        text-align: center;
+      }
+      .value {
+        font-size: 54px;
+        margin: 0;
+        font-size: 54px;
+        color: #e12936;
+        letter-spacing: 0;
+        text-align: center;
+      }
+      .name {
+        margin-top: 10px;
+        font-size: 13px;
+        color: #333333;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

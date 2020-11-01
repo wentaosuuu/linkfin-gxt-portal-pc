@@ -1,0 +1,96 @@
+.container {
+  width: 1200px;
+  height: 468px;
+  margin: 0 auto;
+  background: #fff;
+  .product-com {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+    background: #fff;
+    .product {
+      display: flex;
+      flex-direction: column;
+      width: 224px;
+      // justify-content: center;
+      align-items: center;
+      border: 1px solid #e0e0e0;
+      // flex-shrink: 0;
+      box-shadow: 0 6px 8px 0 rgba(225, 227, 230, 0.5);
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      .title {
+        margin-top: 30px;
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 18px;
+        color: #404040;
+        letter-spacing: 0;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+      .logo {
+        margin-top: 25px;
+        width: 120px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 100%;
+          max-height: 100%;
+        }
+      }
+      .rate {
+        font-family: MicrosoftYaHei;
+        margin-top: 40px;
+        margin-bottom: 44px;
+        font-size: 30px;
+        color: #f22d13;
+        letter-spacing: 0;
+        .present {
+          font-size: 20px;
+          color: #f22d13;
+        }
+      }
+      .ls {
+        width: 170px;
+        font-family: MicrosoftYaHei;
+        font-size: 13px;
+        color: #333333;
+        letter-spacing: 0;
+        span {
+          font-size: 13px;
+          color: #808080;
+          display: inline-block;
+          width: 65px;
+        }
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+      .btn {
+        cursor: pointer;
+        margin-top: 20px;
+        width: 84px;
+        height: 33px;
+        border-radius: 6px;
+        line-height: 33px;
+        font-family: MicrosoftYaHei;
+        background: #fff2f2;
+        border: 1px solid #fc5d5d;
+        font-size: 13px;
+        color: #fb4d4d;
+        letter-spacing: 0;
+        text-align: center;
+        &:hover {
+          color: #fff;
+          background-image: linear-gradient(180deg, #ff6029 0%, #fd5252 100%);
+          box-shadow: 0 4px 8px 0;
+        }
+      }
+    }
+  }
+}

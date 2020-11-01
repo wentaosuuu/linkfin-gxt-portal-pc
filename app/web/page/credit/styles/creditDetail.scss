@@ -1,0 +1,64 @@
+.credit-detail-wrap {
+  width: 1200px;
+  margin: 1px auto 20px auto;
+  // .no-data {
+  //   text-align: center;
+  //   font-size: 40px;
+  //   color: #999;
+  //   background: #fff;
+  //   height: 300px;
+  //   line-height: 300px;
+  // }
+  .no-data {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right bottom;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    p {
+      margin-top: 16px;
+    }
+  }
+  .color-FF3B31 {
+    color: #ff3b31 !important;
+  }
+  .color-2C97DE {
+    color: #2c97de !important;
+  }
+  .con {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: #fff;
+    margin-bottom: 20px;
+    .con-item {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      overflow: hidden;
+      .tip {
+        font-family: MicrosoftYaHei;
+        font-size: 15px;
+        color: #333333;
+        letter-spacing: 0;
+        margin-left: 40px;
+      }
+      .ul {
+        height: 20px;
+        transition: all 0.5s;
+      }
+      .list {
+        display: flex;
+        height: 20px;
+      }
+    }
+  }
+}

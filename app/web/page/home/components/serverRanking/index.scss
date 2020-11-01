@@ -1,0 +1,31 @@
+.server-ranking-wrap {
+	padding: 0 20px;
+
+	li:not(:last-child) {
+		border-bottom: 1px solid #DFE2E6;
+	}
+
+	.link {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 46px;
+	}
+
+	.company {
+		font-size: 14px;
+		color: #333;
+		width: 190px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+	.stars {
+		img {
+			&:not(:last-child) {
+				margin-right: 3px;
+			}
+		}
+	}
+}

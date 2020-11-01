@@ -1,0 +1,23 @@
+.tag {
+  display: inline-block;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 20px;
+  margin-top: 10px;
+
+  &.green {
+    color: #138545;
+    background-color: #ECFAE7;
+  }
+
+  &.red {
+    color: #F34036;
+    background-color: #FFEDEC;
+  }
+
+  &.blue {
+    color: #2980B9;
+    background-color:#F1FBFF;
+  }
+}

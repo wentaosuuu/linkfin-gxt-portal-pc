@@ -1,0 +1,128 @@
+.container {
+  padding: 0 20px;
+  .header {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #DFE2E6;
+    justify-content: space-between;
+    .title {
+      span {
+        padding-left: 5px;
+        border-left: 4px solid #e12936;
+      }
+    }
+    .nav {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      .nav-item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid transparent;
+        &:hover {
+          color: #d91220;
+          border-bottom: 2px solid #e12936;
+        }
+        &:not(:last-child) {
+          margin-right: 80px;
+        }
+      }
+      .nav-item-active {
+        color: #d91220;
+        border-bottom: 2px solid #e12936;
+      }
+    }
+    .more {
+      cursor: pointer;
+      font-size: 14px;
+      color: #808080;
+      font-family: MicrosoftYaHei;
+      display: flex;
+      align-items: center;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 9px;
+        height: 7px;
+        background-image: url("~@src/assets/img/banner/more.png");
+        background-repeat: no-repeat;
+        margin-left: 8px;
+      }
+      // &:hover {
+        // color: #d91220;
+      // }
+    }
+  }
+  .body {
+    height: 380px;
+    margin-top: 20px;
+    display: flex;
+    .slider-img {
+      width: 224px;
+      height: 100%;
+      background-color: #ccc;
+      position: relative;
+      .img-title {
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        .main-title {
+          font-family: MicrosoftYaHei-Bold;
+          font-size: 23px;
+          color: #ffffff;
+          letter-spacing: 1.3px;
+          text-align: center;
+          font-weight: bold;
+        }
+        .sub-title {
+          margin-top: 10px;
+          font-family: MicrosoftYaHei;
+          font-size: 13px;
+          color: #ffffff;
+          letter-spacing: 0.65px;
+          text-align: center;
+        }
+      }
+    }
+    .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+    .scroll {
+      position: relative;
+      margin-left: 10px;
+      width: calc(100% - 234px);
+      overflow: hidden;
+      .slider {
+        position: absolute;
+        width: 18px;
+        height: 36px;
+        transform: translateY(-50%);
+        top: 50%;
+        cursor: pointer;
+        z-index: 2;
+      }
+      .prev {
+        left: 0;
+        background-image: url("~@src/assets/img/product/arrow_left0.png");
+        &:hover {
+          background-image: url("~@src/assets/img/product/arrow_left1.png");
+        }
+      }
+      .next {
+        right: 0;
+        background-image: url("~@src/assets/img/product/arrow_right0.png");
+        &:hover {
+          background-image: url("~@src/assets/img/product/arrow_right1.png");
+        }
+      }
+    }
+  }
+}

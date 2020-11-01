@@ -1,0 +1,282 @@
+.wrap {
+  border-top: 1px solid #DFE2E6;
+}
+
+.finance-detail-wrap {
+  width: 1200px;
+  margin: 0 auto;
+
+  .item {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .key {
+    color: #808080;
+  }
+
+  .value {
+    font-size: 30px;
+    color: #F22D13;
+    flex: 1;
+
+    b {
+      font-weight: normal;
+      font-size: 30px;
+    }
+
+    i {
+      font-style: normal;
+      font-size: 16px;
+    }
+  }
+
+  .superiority {
+    span {
+      display: inline-block;
+      font-size: 13px;
+      padding: 6px 8px;
+      color: #BB4300;
+      background-color: #FFEFD9;
+      border-radius: 3px;
+      // max-width: 80px;
+      word-break: break-all;
+      text-align: left;
+    }
+  }
+
+  .bread-crumps {
+    height: 40px;
+    background-color: #fff;
+  }
+
+  .finance-details {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 10px 20px 20px;
+    font-size: 14px;
+
+    .row1 {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 168px;
+        margin-left: 8px;
+      }
+
+      .superiority {
+        margin-left: 30px;
+
+        span {
+          &:not(:last-child) {
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .row2 {
+      margin-top: 20px;
+      display: flex;
+
+      .rate {
+        width: 320px;
+      }
+
+      .grade {
+        align-items: center;
+
+        img {
+          width: 30px;
+        }
+      }
+    }
+
+    .row3 {
+      margin-top: 15px;
+      display: flex;
+      align-items: baseline;
+
+      .loan {
+        width: 320px;
+      }
+
+      .address {
+        flex: 1;
+
+        p {
+          flex: 1;
+          word-break: break-all;
+        }
+      }
+
+    }
+
+    .row4 {
+      margin-top: 24px;
+
+      p {
+        color: #151515;
+        line-height: 26px;
+        word-break: break-all;
+      }
+
+    }
+
+  }
+
+  .product-wrap {
+    background-color: #fff;
+    font-size: 14px;
+    margin: 20px 0;
+    padding: 0 20px 30px;
+
+    .product-item {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #DFE2E6;
+      }
+    }
+
+    .rank {
+      height: 40px;
+      box-shadow: inset 0 -1px 0 0 #DFE2E6;
+    }
+
+    .col1 {
+      width: 300px;
+      height: 168px;
+      position: relative;
+      color: #fff;
+
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+          font-size: 24px;
+          margin: 0;
+          text-align: center;
+          word-break: break-all;
+        }
+
+        .line {
+          width: 20px;
+          height: 1px;
+          background-color: #fff;
+          margin: 10px 0;
+        }
+
+        span {
+          text-align: center;
+          word-break: break-all;
+        }
+      }
+
+
+    }
+
+    .col2 {
+      margin-left: 20px;
+      width: 300px;
+
+      .loan {
+        margin-top: 20px;
+      }
+    }
+
+    .col3 {
+      width: 200px;
+
+      p {
+        line-height: 30px;
+      }
+    }
+
+    .col4 {
+      width: 200px;
+
+      .superiority {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          max-width: 140px;
+          margin: 5px;
+        }
+      }
+    }
+
+    .col5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .apply {
+        cursor: pointer;
+        border: none;
+        width: 92px;
+        height: 36px;
+        border-radius: 4px;
+        color: #fff;
+        background: linear-gradient(180deg, #FF6029 0%, #FD5252 100%);
+        box-shadow: 0 5px 10px 0 rgba(246, 73, 27, 0.20);
+
+        &:disabled {
+          cursor: not-allowed;
+          background: #f0f0f0;
+          box-shadow: none;
+          border: 1px solid #ddd;
+          color: #ccc;
+        }
+      }
+
+      .view {
+        cursor: pointer;
+        display: inline-block;
+        width: 92px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        border-radius: 4px;
+        color: #404040;
+        background: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        margin-top: 15px;
+      }
+
+    }
+
+  }
+
+
+}
+
+.no-data {
+  padding: 20px;
+  text-align: center;
+  color: #999;
+}

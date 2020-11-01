@@ -1,0 +1,40 @@
+.order-box-wrap{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  .order-item{
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    &:last-child{
+      margin-right: 0;
+    }
+    .name{
+      &.active{
+        font-weight: bold;
+        color: #E12936;
+      }
+    }
+    .icon{
+      margin-left: 3px;
+      width: 7px;
+      height: 10px;
+      display: inline-block;
+      background: url('~@src/assets/img/common/arrow_0.png') no-repeat 0 0;
+      &.up{
+        background: url('~@src/assets/img/common/arrow_1.png') no-repeat 0 0;
+      }
+      &.down{
+        background: url('~@src/assets/img/common/arrow_2.png') no-repeat 0 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.title {
+  font-weight: bolder;
+}
+.line-box {
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  .line {
+    .cret {
+      padding: 0 10px;
+      display: inline-flex;
+      align-items: center;
+      flex-direction: column;
+      width: 70px;
+      height: 30px;
+      .top {
+      }
+      .bottom {
+        height: 2px;
+        background: #000;
+        width: 60px;
+        position: relative;
+        &::after {
+          content: "";
+          display: inline-block;
+          height: 0;
+          width: 0;
+          right: -12px;
+          position: absolute;
+          background: fff;
+          top: -5px;
+          border: 6px solid;
+          border-top-color: currentcolor;
+          border-right-color: currentcolor;
+          border-bottom-color: currentcolor;
+          border-left-color: currentcolor;
+          border-color: transparent transparent transparent #000;
+        }
+      }
+    }
+  }
+}

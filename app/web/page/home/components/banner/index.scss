@@ -1,0 +1,34 @@
+.banner {
+  height: 375px;
+  position: relative;
+  overflow: hidden;
+  .banner-item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: all 0.5s;
+    background-position-x: center;
+  }
+  .toggle-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    .toggle-btn-item {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.5);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+    .toggle-btn-item-active {
+      background: #fff;
+    }
+  }
+}

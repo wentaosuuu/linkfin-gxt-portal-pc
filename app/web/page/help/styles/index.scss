@@ -1,0 +1,126 @@
+.helper {
+  background-color: #f4f4f4;
+  border-top: 1px solid #dfe2e6;
+  overflow: hidden;
+
+  .popup-body {
+    h3 {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    div {
+      padding: 0 20px;
+      line-height: 1.7;
+    }
+  }
+
+  .banner {
+    width: 100%;
+    // height: 150px;
+  }
+
+  .container {
+    width: 1200px;
+    margin: 20px auto;
+    padding: 30px 40px;
+    min-height: 400px;
+    background-color: white;
+    box-sizing: border-box;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        font-size: 24px;
+        color: #333;
+        margin: 0;
+      }
+
+      i {
+        display: block;
+        width: 20px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #dcdfe0;
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: 16px;
+        color: #dcdfe0;
+        font-weight: bold;
+      }
+    }
+
+    .content {
+      margin-top: 35px;
+      li {
+        margin-bottom: 60px;
+
+        .question {
+          font-size: 20px;
+          font-weight: 700;
+          color: #666;
+          margin-bottom: 15px;
+          display: flex;
+          align-items: center;
+
+          i {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background-image: url(../../../assets/img/news/icon_q.png);
+            background-repeat: no-repeat;
+            margin-right: 16px;
+          }
+        }
+
+        .answer {
+          display: flex;
+          line-height: 200%;
+          font-size: 16px;
+          color: #999;
+
+          i {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background-image: url(../../../assets/img/news/icon_a.png);
+            background-repeat: no-repeat;
+            margin-right: 16px;
+          }
+
+          .a1 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
+
+          .more {
+            font-size: 14px;
+            color: #d5b28e;
+            cursor: pointer;
+            font-weight: 700;
+          }
+
+          .html {
+            // display: flex;
+
+            img {
+              max-width: 100%;
+            }
+
+            em {
+              font-style: normal;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+FROM node:current-alpine
+
+# EXPOSE 80
+# CMD [ "yarn", "run", "docker" ]
+
+WORKDIR /app
+
+# ADD . .
+RUN set -ex \
+  && sed -i "s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g" /etc/apk/repositories \
+  && apk add --no-cache --virtual .build-deps \
+    autoconf \
+    automake \
+    bash \
+    g++ \
+    libpng-dev \
+    make \
+    nasm \
+    python2 \
+    zlib-dev \
+  && yarn config set registry https://registry.npm.taobao.org/ \
+  && yarn config set sass-binary-site https://npm.taobao.org/mirrors/node-sass \
+  && yarn add @babel/polyfill \
+    @easy-team/easywebpack-cli \
+    @easy-team/easywebpack-react \
+    imagemin-webpack-plugin \
+    --verbose
+    # node-sass
+  # && yarn run build \
+  # && yarn cache clean \
+  # && apk del .build-deps

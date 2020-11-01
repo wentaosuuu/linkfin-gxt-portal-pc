@@ -1,0 +1,38 @@
+.container {
+  margin: 20px;
+  .chart {
+    margin: 0 auto;
+    width: 1150px;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .title {
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+    letter-spacing: 1px;
+  }
+  .tip {
+    margin: 10px 0;
+    font-family: MicrosoftYaHei;
+    font-size: 13px;
+    color: #999999;
+    letter-spacing: 0;
+  }
+  .default {
+    height: 35px;
+    color: #fff;
+    background-color: #3194ff;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 30px;
+    border-radius: 10px;
+    margin-top: 250px;
+    transform: translate(-50%);
+    margin-left: 50%;
+  }
+}

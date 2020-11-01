@@ -1,0 +1,78 @@
+.gxt-pagination{
+  display: flex;
+  height: 50px;
+  align-items: center;
+  // padding: 0 20px;
+  background-color: #fff;
+  justify-content: space-between;
+  .page-info{
+    font-size: 14px;
+    color: #666666;
+    // padding: 0 20px;
+  }
+  .right{
+    display: flex;
+    .page-size{
+      margin-right: 8px;
+    }
+    .pages{
+      display: flex;
+      .page{
+        cursor: pointer;
+        float: left;
+        background-color: #fff;
+        border: 1px solid #eee;
+        margin: 0 5px;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 4px;
+        color: #666;
+        min-width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn-next, .btn-prev{
+        padding: 0 10px;
+        color: $theme-gray-color;
+      }
+      .btn-next.clickable, .btn-prev.clickable{
+        color: #666;
+      }
+      .page.active{
+        background-color: #EF4747;
+        border: 1px solid #EF4747;
+        color: #fff;
+      }
+    }
+    .jump{
+      margin-left: 16px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      color: #666;
+      input{
+        font-size: 14px;
+        box-sizing: border-box;
+        margin: 0 8px;
+        width: 48px;
+        height: 30px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        text-align: center;
+      }
+      .btn{
+        width: 60px;
+        height: 30px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 4px;
+        margin-left: 10px;
+        cursor: pointer;
+        color: #666;
+      }
+    }
+  }
+}

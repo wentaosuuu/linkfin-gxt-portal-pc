@@ -1,0 +1,178 @@
+//待优化   用sass 函数代替媒体查询
+.search-Wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  background: url("../../../assets/img/credit_search/bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  //大于1920
+  @media screen and (min-width: 1920px) {
+    min-height: calc(1920px / 2.64); //图片宽度/图片高度：2.64
+  }
+  //小于1920
+  @media screen and (max-width: 1920px) and (min-width: 1200px) {
+    min-height: calc(100vw / 2.64); //图片宽度/图片高度：2.64
+  }
+  @media screen and (max-width: 1200px) {
+    min-height: calc(1200px / 2.64); //图片宽度/图片高度：2.64
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10%;
+    .sentence1 {
+      @media screen and (min-width: 1920px) {
+        font-size: calc(1920px / 38.4); //设计图宽度/20:96
+      }
+      //小于1920
+      @media screen and (max-width: 1920px) and (min-width: 1200px) {
+        font-size: calc(100vw / 38.4); //设计图宽度/20:96
+      }
+      @media screen and (max-width: 1200px) {
+        font-size: calc(1200px / 38.4); //设计图宽度/20:96
+      }
+      color: #6e2727;
+      font-family: PingFangSC-Regular, serif;
+      letter-spacing: 4px;
+    }
+    .separator {
+      margin-top: 20px;
+    }
+
+    .sentence2 {
+      margin-top: 20px;
+      font-family: MicrosoftYaHei;
+      font-size: calc(100vw / 96); //设计图宽度/20:96
+      color: #6e2727;
+      letter-spacing: 2px;
+      text-align: center;
+      @media screen and (min-width: 1920px) {
+        font-size: calc(1920px / 96); //设计图宽度/20:96
+      }
+      //小于1920
+      @media screen and (max-width: 1920px) and (min-width: 1200px) {
+        font-size: calc(100vw / 96); //设计图宽度/20:96
+      }
+      @media screen and (max-width: 1200px) {
+        font-size: calc(1200px / 96); //设计图宽度/20:96
+      }
+    }
+
+    .search-bar-Wrapper {
+      position: relative;
+      display: flex;
+      align-items: start;
+      margin-top: 82px;
+      padding: 0 10px;
+      background: url("../../../assets/img/credit_search/searchbox_shadow.png");
+      @media screen and (min-width: 1920px) {
+        height: calc(1920px / 35 + 1920px / 68.67);
+        margin-top: calc(1920px / 23.4);
+      }
+      @media screen and (max-width: 1920px) and (min-width: 1200px) {
+        margin-top: calc(100vw / 23.4);
+        height: calc(100vw / 35 + 100vw / 68.67);
+      }
+      @media screen and (max-width: 1200px) {
+        margin-top: calc(1200px / 23.4);
+        height: calc(1200px / 35 + 1200px / 68.67);
+      }
+
+      .search-icon {
+        position: absolute;
+        top: 0;
+        background: url("../../../assets/img/credit_search/search.png")
+          no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 10px;
+        @media screen and (min-width: 1920px) {
+          width: calc(1920px / 96); //1920/900
+          height: calc(1920px / 96);
+          top: calc(1920px / 34.2857 / 2);
+        }
+        @media screen and (max-width: 1920px) and (min-width: 1200px) {
+          width: calc(100vw / 96); //1920/900
+          height: calc(100vw / 96);
+          top: calc(100vw / 34.2857 / 2);
+        }
+        @media screen and (max-width: 1200px) {
+          width: calc(1200px / 96); //1920/900
+          height: calc(1200px / 96);
+          top: calc(1200px / 34.2857 / 2);
+        }
+        left: 20px;
+        transform: translateY(-50%);
+      }
+
+      .input {
+        @media screen and (min-width: 1920px) {
+          width: calc(1920px / 2.13); //1920/900
+          height: calc(1920px / 35);
+        }
+        @media screen and (max-width: 1920px) and (min-width: 1200px) {
+          width: calc(100vw / 2.13); //1920/900
+          height: calc(100vw / 35);
+        }
+        @media screen and (max-width: 1200px) {
+          width: calc(1200px / 2.13); //1920/900
+          height: calc(1200px / 35);
+        }
+        border: none;
+        box-sizing: content-box;
+        background: #ffffff;
+        border-radius: 6px 0 0 6px;
+        padding-left: 40px;
+
+        &::placeholder {
+          font-family: MicrosoftYaHei;
+          @media screen and (min-width: 1920px) {
+            font-size: calc(1920px / 106.5);
+          }
+          @media screen and (max-width: 1920px) and (min-width: 1200px) {
+            font-size: calc(100vw / 106.5);
+          }
+          @media screen and (max-width: 1200px) {
+            font-size: calc(1200px / 106.5);
+          }
+          color: #999999;
+          letter-spacing: 0.5px;
+        }
+      }
+      input[type="button"] {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .button {
+        @media screen and (min-width: 1920px) {
+          width: calc(1920px / 21.33);
+          height: calc(1920px / 35);
+          font-size: calc(1920px / 106.5);
+        }
+        @media screen and (max-width: 1920px) and (min-width: 1200px) {
+          width: calc(100vw / 21.33);
+          height: calc(100vw / 35);
+          font-size: calc(100vw / 106.5);
+        }
+        @media screen and (max-width: 1200px) {
+          width: calc(1200px / 21.33);
+          height: calc(1200px / 35);
+          font-size: calc(1200px / 106.5);
+        }
+        cursor: pointer;
+        box-sizing: content-box;
+        background: #e12936;
+        border: 1px solid #e12936;
+        border-radius: 0 6px 6px 0;
+        letter-spacing: 5px;
+        font-family: MicrosoftYaHei;
+        color: #ffffff;
+      }
+    }
+  }
+}

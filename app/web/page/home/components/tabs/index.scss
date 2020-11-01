@@ -1,0 +1,39 @@
+.tabs-container {
+  background: #fff;
+  box-sizing: border-box;
+  height: 100%;
+  .header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dfe2e6;
+    padding: 0 15px;
+    justify-content: space-around;
+    .header-item {
+      cursor: pointer;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      border-bottom: 2px solid transparent;
+      font-size: 14px;
+      &:hover {
+        border-bottom: 2px solid #e12936;
+        color: #e12936;
+      }
+    }
+    .header-item-active {
+      border-bottom: 2px solid #e12936;
+      color: #e12936;
+    }
+  }
+  .content {
+    padding: 0 10px;
+    position: relative;
+  }
+  .tab-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+}

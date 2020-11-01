@@ -1,0 +1,11 @@
+.list-box{
+  position: relative;
+  overflow: hidden;
+  &-wrap{
+    &.horizontal{
+      white-space: nowrap;
+      display: inline-block;
+    }
+    position: relative;
+  }
+}

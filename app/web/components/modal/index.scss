@@ -1,0 +1,58 @@
+.gxt-modal{
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  .gxt-modal-mask{
+    display: none;
+    background-color: #000;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  .gxt-modal-mask.active{
+    display: block;
+  }
+  .gxt-modal-wrap{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .gxt-modal-box{
+      padding: 20px;
+      background-color: #fff;
+      .gxt-modal-header{
+        position: relative;
+        .title{
+          height: 50px;
+        }
+        .icon-close{
+          cursor: pointer;
+          right: -10px;
+          top: -10px;
+          width: 32px;
+          height: 32px;
+          position: absolute;
+          background: url('../../assets/img/close.png') no-repeat 0 0;
+          transform: scale(.7);
+        }
+      }
+      .gxt-modal-content{
+        min-width: 450px;
+        min-height: 150px;
+      }
+    }
+  }
+}
+.gxt-modal.visible{
+  display: block;
+}

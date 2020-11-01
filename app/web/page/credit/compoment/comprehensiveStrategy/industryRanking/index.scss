@@ -1,0 +1,78 @@
+.industry-ranking-wrap {
+  font-size: 14px;
+  color: #333;
+  word-break: break-all;
+
+  .risk-warn {
+    // background: #fff;
+    border: 1px solid #DFE2E6;
+    padding: 20px;
+    margin-top: 20px;
+
+    .summary {
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .details {
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-size: 15px;
+      margin: 0;
+    }
+
+    p {
+      line-height: 21px;
+
+      i {
+        color: #2C97DE;
+        font-style: normal;
+      }
+
+      strong {
+        font-weight: normal;
+        &.pass {
+          color: #03A648;
+        }
+
+        &.review {
+          color: #EC8103;
+        }
+
+        &.refuse {
+          color: #F34036;
+        }
+      }
+    }
+  }
+
+  .risk-charts {
+    width: 100%;
+    height: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    .chart-item {
+      flex: 1;
+      height: 100%;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 6px 8px 0 rgba(225, 227, 230, 0.5);
+
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+
+      .chart {
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.rule-hit-statistics-wrap {
+  // background: #FFFFFF;
+  border: 1px solid #dfe2e6;
+  padding: 0 20px;
+
+  .rule-item {
+    padding: 20px 0;
+
+    &:not(:last-child) {
+      border-bottom: solid 1px #dfe2e6;
+    }
+
+    .summary {
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        padding: 0 8px;
+        flex: 0 0 30%;
+        font-size: 15px;
+        margin: 0;
+      }
+
+      p {
+        padding: 0 8px;
+        flex: 0 0 30%;
+        line-height: 21px;
+        text-align: center;
+
+        &:last-child {
+          text-align: right;
+        }
+
+        i {
+          color: #2c97de;
+          font-style: normal;
+        }
+
+        strong {
+          font-weight: normal;
+
+          &.pass {
+            color: #03a648;
+          }
+
+          &.review {
+            color: #ec8103;
+          }
+
+          &.refuse {
+            color: #f34036;
+          }
+        }
+      }
+    }
+
+    .details {
+      margin-top: 20px;
+    }
+
+    .labels {
+      // display: flex;
+      // flex-wrap: wrap;
+      margin-top: 20px;
+
+      // justify-content: space-between;
+      p {
+        border-radius: 4px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        // flex: 0 0 30%;/
+        width: 33.33333%;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 5px;
+        box-sizing: border-box;
+
+        &:nth-child(3n+1) {
+          text-align: left;
+        }
+
+        &:nth-child(3n+2) {
+          text-align: center;
+        }
+
+        &:nth-child(3n) {
+          text-align: right;
+        }
+
+        span {
+          display: inline-block;
+          padding: 4px 8px;
+
+          &.red {
+            color: #f34036;
+            background-color: #ffedec;
+          }
+
+          &.green {
+            color: #138545;
+            background-color: #ecfae7;
+          }
+
+          &.blue {
+            color: #2980b9;
+            background-color: #e1f7ff;
+          }
+        }
+      }
+    }
+  }
+}

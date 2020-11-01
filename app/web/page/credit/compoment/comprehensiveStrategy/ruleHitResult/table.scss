@@ -1,0 +1,66 @@
+.table-wrap {
+  display: flex;
+
+  table {
+    flex: 1;
+    width: 50%; /* 兼容Edge浏览器 */
+    border: 1px solid #dfe2e6;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #333;
+
+    &:not(:first-child) {
+      margin-left: -1px;
+    }
+
+    th {
+      border: 1px solid #dfe2e6;
+      height: 48px;
+
+      &:first-child {
+        background-color: #f7f9fa;
+      }
+    }
+
+    td {
+      border: 1px solid #dfe2e6;
+      height: 48px;
+      padding: 0 30px;
+
+      &:first-child {
+        background-color: #f7f9fa;
+        font-weight: bold;
+      }
+
+      &:not(:first-child) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.table-wrap-pdf {
+  table {
+    border: 1px solid #333;
+
+    th {
+      border: 1px solid #333;
+      height: 17px;
+      padding: 5px;
+
+      &:first-child {
+        background-color: transparent;
+      }
+    }
+
+    td {
+      border: 1px solid #333;
+      height: 17px;
+      padding: 5px;
+
+      &:first-child {
+        background-color: transparent;
+      }
+    }
+  }
+}

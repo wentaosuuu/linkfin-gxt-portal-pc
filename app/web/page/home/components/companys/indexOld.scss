@@ -1,0 +1,29 @@
+@import "~swiper/css/swiper.css";
+
+.companys {
+  margin-bottom: 50px;
+  .swiper {
+    &::after {
+      display: table;
+      content: "";
+      clear: both;
+    }
+  }
+  .img {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 200px;
+    height: 120px;
+    &:nth-of-type(6n) {
+      margin-right: 0;
+    }
+  }
+
+  // img {
+  //   float: left;
+  //   margin: 0 15px 15px 0;
+  //   &:nth-of-type(6n) {
+  //     margin-right: 0;
+  //   }
+  // }
+}

@@ -1,0 +1,40 @@
+.table-wrap {
+  text-align: center;
+  width: 100%;
+  font-size: 13px;
+  border: 1px solid #DFE2E6;
+  border-collapse: collapse;
+
+  thead {
+    font-weight: bold;
+    background-color: #F7F9FA;
+
+    tr {
+      height: 48px;
+
+      td {
+        padding: 5px;
+        border: 1px solid #DFE2E6;
+        box-sizing: border-box;
+        line-height: 1.4em;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      height: 48px;
+
+      td {
+        padding: 5px;
+        box-sizing: border-box;
+        border: 1px solid #DFE2E6;
+        line-height: 1.4em;
+      }
+    }
+
+    tr:nth-child(2n) {
+      background-color: #F7F9FA;
+    }
+  }
+}

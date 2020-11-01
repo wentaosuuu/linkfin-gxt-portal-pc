@@ -1,0 +1,72 @@
+.gxt-input-box{
+  display: flex;
+  .gxt-label{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 150px;
+    padding-right: 10px;
+    color: #666;
+    .required{
+      display: none;
+      color: #f56c6c;
+      margin-right: 5px;
+    }
+    .required.active{
+      display: block;
+    }
+  }
+  .gxt-input-wrap{
+    position: relative;
+    display: flex;
+    height: 36px;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 100%;
+    input[disabled],input:disabled{
+      background-color: #ebebe4;
+    }
+    .gxt-input{
+      border: none;
+      outline: none;
+      width: 300px;
+      padding-right: 20px;
+    }
+    .gxt-input::placeholder{
+      font-size: 14px;
+    }
+    .icon-close{
+      position: absolute;
+      right: 10px;
+      display: none;
+      background: url('../../../assets/img/input_close.png') no-repeat 0 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 12px;
+      border: 1px solid #cdcdcd;
+      font-size: 10px;
+      text-align: center;
+      line-height: 12px;
+      cursor: pointer;
+    }
+    .icon-close.active{
+      display: inline-block;
+    }
+  }
+  .gxt-input-wrap.error{
+    border: 1px solid #f56c6c;
+  }
+  .gxt-input-wrap.disabled{
+    background-color: #ebebe4;
+  }
+  .custom-icon{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+}

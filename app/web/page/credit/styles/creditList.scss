@@ -1,0 +1,58 @@
+.container {
+  width: 1200px;
+  margin: 1px auto 20px;
+  font-family: MicrosoftYaHei;
+  letter-spacing: 0;
+  // background-color: #fff;
+  // background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: right bottom;
+  background-color: #fff;
+  .content {
+    padding: 0 20px 40px;
+    // background: #fff;
+    .search-num {
+      font-size: 14px;
+      color: #333333;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #dfe2e6;
+      .font {
+        color: #e12936;
+        margin: 0 5px;
+      }
+    }
+    .bottom {
+      margin-top: 20px;
+      .page {
+        .page-item {
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border: 1px solid #aaa;
+          text-align: center;
+          border-radius: 4px;
+          &:not(:last-child) {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .no-search {
+      height: 420px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      font-family: PingFangSC-Regular;
+      font-size: 18px;
+      color: #333333;
+      text-align: center;
+      p {
+        margin-top: 16px;
+      }
+    }
+  }
+}

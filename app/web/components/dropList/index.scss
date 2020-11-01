@@ -1,0 +1,116 @@
+.gxt-droplist-box{
+  display: flex;
+  .gxt-label{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 150px;
+    padding-right: 10px;
+    color: #666;
+    .required{
+      display: none;
+      color: #f56c6c;
+      margin-right: 5px;
+    }
+    .required.active{
+      display: block;
+    }
+  }
+  .gxt-droplist{
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    .current-box{
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 6px 10px;
+      padding-left: 6px;
+      &.error{
+        border: 1px solid #f56c6c;
+      }
+      &-input{
+        color: #666;
+        cursor: pointer;
+        padding: 0 5px 0 10px;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+      }
+      .icon-arrows{
+        transition: all .3s;
+        .iconfont{
+          font-size: 20px;
+        }
+      }
+      .icon-arrows.active{
+        transform:rotate(-180deg);
+      }
+    }
+  
+    .list{
+      z-index: 1000;
+      opacity: 0;
+      max-height: 0;
+      display: none;
+      width: 100%;
+      top: 40px;
+      position: absolute;
+      border: 1px solid #e4e7ed;
+      background-color: #fff;
+      box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+      border-radius: 5px;
+      transition: all 1s;
+      ul{
+        padding-left: 0;
+        li{
+          font-size: 14px;
+          padding: 10px;
+          padding-left: 20px;
+        }
+        li.active{
+          font-weight: 700;
+          color: $theme-color;
+          background-color: #f5f7fa;
+        }
+        li:hover{
+          background-color: #f5f7fa;
+        }
+      }
+    }
+    
+    .list:after{
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      top:  -9px;
+      left: 26px;
+      border-right: solid 9px transparent;
+      border-left: solid 9px transparent;
+      border-bottom: solid 9px #fff;
+    }
+    .list:before{
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      top:  -10px;
+      left: 25px;
+      border-right: solid 10px transparent;
+      border-left: solid 10px transparent;
+      border-bottom: solid 10px #e4e7ed;
+    }
+    .list.active{
+      opacity: 1;
+      max-height: 500px;
+      display: block;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+  }
+}
+

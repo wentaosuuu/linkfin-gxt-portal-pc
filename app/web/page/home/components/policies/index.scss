@@ -1,0 +1,28 @@
+.policies-wrap {
+	padding: 0 20px;
+
+	li:not(:last-child) {
+		border-bottom: 1px solid #DFE2E6;
+	}
+
+	.link {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 46px;
+
+		.content {
+			font-size: 14px;
+			color: #333;
+			width: 245px;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+
+		.time {
+			font-size: 13px;
+			color: #808080;
+		}
+	}
+}

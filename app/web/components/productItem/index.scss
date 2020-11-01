@@ -1,0 +1,40 @@
+.product-list-item{
+  background-color: #fff;
+  display: flex;
+  padding: 0 40px 0 60px;
+  height: 180px;
+  margin-bottom: 20px;
+  .item-brand{
+    padding-top: 50px;
+    padding-left: 30px;
+    width: 400px;
+    box-sizing: border-box;
+    img{
+      height: 36px;
+    }
+    &-text{
+      font-size: 24px;
+      color: #333;
+      max-height: 75px;
+      overflow: hidden;
+    }
+  }
+  .item-infos{
+    width: 560px;
+    padding-top: 20px;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        width: 270px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .item-btns{
+    display: flex;
+    align-items: center;
+  }
+}

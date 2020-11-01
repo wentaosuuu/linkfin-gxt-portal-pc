@@ -1,0 +1,38 @@
+.btn{
+  border: none;
+  text-align: center;
+  outline: 0;
+  font-size: 14px;
+  padding: 0 45px;
+  height: 40px;
+  background-color: $theme-color;
+  color: #fff;
+  line-height: 40px;
+  cursor: pointer;
+  &-gradient{
+    background: linear-gradient(90deg,#d5b28d,#ca9d71);
+  }
+  &-shadow{
+    box-shadow: 0 6px 8px -3px rgba(219,192,124,.6);
+  }
+  &-radius{
+    border-radius: 20px;
+  }
+  &-hollow{
+    background-color: #fff;
+    border: 1px solid $theme-color;
+    color: $theme-color;
+  }
+  &-hollow:hover{
+    background-color: $theme-color;
+    color: #fff;
+  }
+}
+.btn:hover{
+  opacity: .8;
+  box-shadow: 0 6px 8px -3px rgba(219,172,124,.6);
+}
+.btn[disabled] {
+  background-color: #e8e8e8;
+  color: #a9a9a9;
+}
